@@ -119,3 +119,10 @@ To delete all stopped containers:
 ```
 docker container prune
 ```
+
+### To Simplify the process of building images and running containers, navigate to the root directory.You can create a **git bash/ubuntu/Linux terminal/Operating System** and run the following command which would automate the process.  
+```
+chmod +x deploy.sh
+./deploy.sh
+```
+
