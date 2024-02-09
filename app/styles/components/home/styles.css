@@ -2,16 +2,15 @@ main {
   margin-top: 2%;
   margin-bottom: 2%;
   padding-left: 5%;
-  padding-right: 5%;
   display: flex;
   flex-direction: row;
-  gap: 5%;
   overflow-y: hidden;
+  gap: 3%;
 }
 main .left-section {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 25%;
   gap: 1%;
 }
 main .left-section .profile-stats {
@@ -243,7 +242,11 @@ main .middle-section .social-posts .top .post-profilePicture-wrapper {
   border-radius: 50%;
 }
 main .middle-section .social-posts .top .post-profilePicture-wrapper img {
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main .middle-section .social-posts .top .username {
   font-size: 1.2rem;
@@ -302,4 +305,86 @@ main .middle-section .social-posts .center form textarea {
   font-size: 1rem;
   outline: none;
   font-family: Inter;
-}/*# sourceMappingURL=home.css.map */
+}
+main .right-section {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+main .right-section .stories {
+  background-color: white;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  border-radius: 1rem;
+}
+main .right-section .stories .top {
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+main .right-section .stories .top p {
+  font-size: 0.9rem;
+  color: grey;
+}
+main .right-section .stories .bottom {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  overflow-x: scroll;
+  width: 100%;
+  will-change: transform;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+main .right-section .stories .bottom:active {
+  cursor: grabbing;
+}
+main .right-section .stories .bottom .story {
+  display: flex;
+  flex-direction: column;
+  cursor: grab;
+  width: 100%;
+  scroll-snap-align: start;
+}
+main .right-section .stories .bottom .story .user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  position: relative;
+  width: 5rem;
+}
+main .right-section .stories .bottom .story .user .contentImage-wrapper {
+  width: 100%;
+  height: 10rem;
+  border-radius: 1rem;
+}
+main .right-section .stories .bottom .story .user .contentImage-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+main .right-section .stories .bottom .story .user .profileImage-wrapper {
+  width: 50%;
+  position: absolute;
+  bottom: -16%;
+  border-radius: 100%;
+}
+main .right-section .stories .bottom .story .user .profileImage-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .right-section .stories .bottom .story .username {
+  margin: 25% 0 0 0;
+}/*# sourceMappingURL=styles.css.map */

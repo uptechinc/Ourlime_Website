@@ -8,6 +8,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 // SEO metadata customized for "ourlime.com" (hypothetical content)
 export const metadata: Metadata = {
+  metadataBase: "https://ourlime.com", // Define the base URL for your site
   title: "Ourlime Communities Network",
   description: "Discover and connect with private communities on Ourlime. Explore shared interests, recipes, and tips with like-minded individuals.",
   canonical: "https://ourlime.com",

@@ -1,4 +1,5 @@
 type Metadata = {
+  metadataBase: string;
   title: string;
   description: string;
   canonical: string;

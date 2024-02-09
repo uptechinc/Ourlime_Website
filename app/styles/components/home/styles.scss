@@ -4,15 +4,14 @@ main {
     margin-top: 2%;
     margin-bottom: 2%;
     padding-left: 5%;
-    padding-right: 5%;
     display: flex;
     flex-direction: row;
-    gap: 5%;
     overflow-y: hidden;
+    gap: 3%;
     .left-section{
         display: flex;
         flex-direction: column;
-        width: 30%;
+        width: 25%;
         gap: 1%;
         .profile-stats{
             display: flex;
@@ -259,7 +258,11 @@ main {
                     border-radius: 50%;
     
                     img{
+                        width: 100%;
+                        height: 100%;
                         border-radius: 50%;
+                        object-fit: cover;
+
                     }
                 }
 
@@ -286,7 +289,7 @@ main {
                     flex-direction: row;
                     gap: 3%;
                     align-items: center;
-                  
+                
                     .profile-pictures {
                         display: flex;
                         flex-direction: row-reverse; // Start laying out children from right to left
@@ -333,5 +336,93 @@ main {
                     
             }
         }
+    }
+
+    .right-section{
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        .stories{
+            background-color: white;
+            box-sizing: border-box;
+            width: 100%;
+            overflow-x: hidden;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-bottom: 5%;
+            border-radius: 1rem;
+
+            .top{
+                padding: 2%;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                p{font-size: .9rem; color: grey;}
+            }
+
+            .bottom{
+                display: flex;
+                flex-direction: row;
+                gap: 10%;
+                overflow-x: scroll;
+                width: 100%;
+                will-change: transform;
+                scroll-snap-type: x mandatory;
+                scrollbar-width: none;
+
+                &:active{
+                    cursor: grabbing;
+                }
+                .story{
+                    display: flex;
+                    flex-direction: column;
+                    cursor: grab;
+                    width: 100%;
+                    scroll-snap-align: start;
+                    .user{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        border-radius: 1rem;
+                        position: relative;
+                        width: 5rem;
+
+                        .contentImage-wrapper{
+                            width: 100%;
+                            height: 10rem;
+                            border-radius: 1rem;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                border-radius: 1rem;
+
+                            }
+                        }
+                        .profileImage-wrapper{
+                            width: 50%;
+                            position: absolute;
+                            bottom: -16%;
+                            border-radius: 100%;
+
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 50%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+
+                    .username{
+                        margin: 25% 0 0 0;
+                    }
+                }
+            }
+        }
+
     }
 }
