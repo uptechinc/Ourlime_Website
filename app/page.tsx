@@ -7,7 +7,7 @@ import RightSection from "@/app/components/home/RightSection";
 export default function Home() {
   return (
     <main>
-
+      <h1>Ourlime</h1>
       <LeftSection />
       <MiddleSection />
       <RightSection />

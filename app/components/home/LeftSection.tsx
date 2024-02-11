@@ -1,7 +1,9 @@
 import Image from "next/image";
 import ourlimeImage from '@/public/images/ourlime logo.png'
 import userPicture from '@/public/images/userPicture.png'
-
+import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
+import SettingsIcon from '@mui/icons-material/Settings';
+import RefreshIcon from '@mui/icons-material/Refresh';
 export default function LeftSection() {
   return (
     <section className="left-section">
@@ -15,7 +17,7 @@ export default function LeftSection() {
 
           <div className="user">
             <p className="username">Ourlime Admin</p>
-            <p className="social-handle">@darren07</p>
+            <p className="social-handle">@ourlime_admin</p>
           </div>
 
           <div className="action-btns">
@@ -43,8 +45,8 @@ export default function LeftSection() {
           <div className="header">
             <h2>Chats</h2>
 
-            <p>ico</p>
-            <p>ico</p>
+            <PeopleAltIcon className="chat-btn"/>
+            <SettingsIcon className="chat-btn"/>
             
           </div>
 
@@ -73,7 +75,7 @@ export default function LeftSection() {
                 </div>
 
                 <div className="recent-chats-item-info">
-                  <p className="recent-chats-item-info-username">Aaron Hazzard</p>
+                  <p className="recent-chats-item-info-username">Rishi Kowlesser</p>
                 </div>
               </div>
 
@@ -84,7 +86,7 @@ export default function LeftSection() {
                 </div>
 
                 <div className="recent-chats-item-info">
-                  <p className="recent-chats-item-info-username">Aaron Hazzard</p>
+                  <p className="recent-chats-item-info-username">Raushawn Mitchell</p>
                 </div>
               </div>
 
@@ -94,7 +96,7 @@ export default function LeftSection() {
                 </div>
 
                 <div className="recent-chats-item-info">
-                  <p className="recent-chats-item-info-username">Aaron Hazzard</p>
+                  <p className="recent-chats-item-info-username">Kyle Nagee</p>
                 </div>
               </div>
 
@@ -105,7 +107,7 @@ export default function LeftSection() {
                 </div>
 
                 <div className="recent-chats-item-info">
-                  <p className="recent-chats-item-info-username">Aaron Hazzard</p>
+                  <p className="recent-chats-item-info-username">Josiah James</p>
                 </div>
               </div>
 
@@ -115,7 +117,7 @@ export default function LeftSection() {
                 </div>
 
                 <div className="recent-chats-item-info">
-                  <p className="recent-chats-item-info-username">Aaron Hazzard</p>
+                  <p className="recent-chats-item-info-username">Neola Hernadez</p>
                 </div>
               </div>
               

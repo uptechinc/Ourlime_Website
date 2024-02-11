@@ -14,4 +14,4 @@ docker stop $CONTAINER_NAME
 docker rm $CONTAINER_NAME
 
 # Run the new container in detached mode (in the background)
-docker run -d -p 4000:4000 -v "$(pwd):/app" --name $CONTAINER_NAME $IMAGE_NAME
+docker run -d -p 4000:4000 -e PORT=4000 -v "$(pwd):/app" --name $CONTAINER_NAME $IMAGE_NAME
