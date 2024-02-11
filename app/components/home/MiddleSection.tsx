@@ -70,12 +70,12 @@ export default function MiddleSection() {
                         <p className="post-content">
                             Hey there, eco-friends! 🙌
 
-                            Today, I took a stroll through the whispering pines and couldn't help but feel a deep connection with the symphony of nature. It's moments like these that remind me why we need to step up our game in environmental conservation. 🌳✨
+                            Today, I took a stroll through the whispering pines and couldn&apos;t help but feel a deep connection with the symphony of nature. It&apos;s moments like these that remind me why we need to step up our game in environmental conservation. 🌳✨
                             <span>Read More ...</span>
                         </p>
 
                         <div className="image-wrapper">
-                            <Image src={trees} alt="trees" quality={100} />
+                            <Image src={trees} alt="trees" quality={100} placeholder="blur"/>
                         </div>                                            
                         <div className="interactive-icons">
                             <div className="likes">23k</div>
@@ -137,11 +137,11 @@ export default function MiddleSection() {
 
                             From AI-driven home assistants that not only understand your mood but also suggest activities, to VR setups that can virtually transport you to Mars, innovation is at an all-time high! 🏠👽
 
-                            But what really caught my attention was the breakthrough in sustainable tech. Solar panels as thin as paper, yet as powerful as traditional panels, and smartphones made from recycled materials that are fully biodegradable. We're not just thinking smart; we're thinking forward. 🌞♻️
+                            But what really caught my attention was the breakthrough in sustainable tech. Solar panels as thin as paper, yet as powerful as traditional panels, and smartphones made from recycled materials that are fully biodegradable. We&apos;re not just thinking smart; we&apos;re thinking forward. 🌞♻️
 
-                            It's not the gadgets that excite me the most; it's the potential they have to change lives. Imagine remote education with AR that brings the classroom to you, or medical drones delivering aid in record time. The future is about tech with a heart. ❤️🛸
+                            It&apos;s not the gadgets that excite me the most; it&apos;s the potential they have to change lives. Imagine remote education with AR that brings the classroom to you, or medical drones delivering aid in record time. The future is about tech with a heart. ❤️🛸
 
-                            What tech advancements are you most excited about? Drop a comment below and let's geek out about the innovations that are reshaping our world!
+                            What tech advancements are you most excited about? Drop a comment below and let&apos;s geek out about the innovations that are reshaping our world!
 
                             #TechNow #FutureIsNow #Innovation #SustainableTech #SmartTech #TechWithAHeart                        
                         </p>
@@ -199,15 +199,15 @@ export default function MiddleSection() {
                         <p className="post-content">
                             Gamers, Assemble! 🌟
 
-                            Just when we thought games couldn't get more immersive, the latest wave of gaming tech has us rethinking what's possible! I've just spent the weekend testing out the newest console on the block, and let me tell you, it's like stepping into the future. 🌌
+                            Just when we thought games couldn&apos;t get more immersive, the latest wave of gaming tech has us rethinking what&apos;s possible! I&apos;ve just spent the weekend testing out the newest console on the block, and let me tell you, it&apos;s like stepping into the future. 🌌
 
-                            We're talking crystal-clear 8K resolution, frame rates that make gameplay smoother than ever, and AI-driven personal game assistants that adapt to your play style. It's not just gaming; it's a doorway to new worlds! 🤩
+                            We&apos;re talking crystal-clear 8K resolution, frame rates that make gameplay smoother than ever, and AI-driven personal game assistants that adapt to your play style. It&apos;s not just gaming; it&apos;s a doorway to new worlds! 🤩
 
-                            But it's not all about the specs. It's about the stories, the adventures, and the communities we build along the way. Indie developers are bringing heart and soul into their games, proving once again that a powerful narrative can be as gripping as stunning visuals. 📖❤️
+                            But it&apos;s not all about the specs. It&apos;s about the stories, the adventures, and the communities we build along the way. Indie developers are bringing heart and soul into their games, proving once again that a powerful narrative can be as gripping as stunning visuals. 📖❤️
 
-                            And can we talk about cross-platform play? The barriers are down, friends! You can now team up (or face off) with players regardless of the device. It's a united gaming universe, and everyone's invited to the party. 🎉🌐
+                            And can we talk about cross-platform play? The barriers are down, friends! You can now team up (or face off) with players regardless of the device. It&apos;s a united gaming universe, and everyone&apos;s invited to the party. 🎉🌐
 
-                            So, what's your current gaming obsession? Are you a solo adventurer or a co-op champion? Share your latest gaming feats and favorite in-game moments!
+                            So, what&apos;s your current gaming obsession? Are you a solo adventurer or a co-op champion? Share your latest gaming feats and favorite in-game moments!
 
                             #GamingLife #NextGenConsoles #IndieGameDev #8KGaming #CrossPlatformPlay #GamerCommunity  
                         </p>

@@ -68,7 +68,7 @@ export default function Slider() {
                         <div className="user">
             
                             <div className="contentImage-wrapper">
-                                <Image src = {car} alt = "story thumbnail" />
+                                <Image src = {car} alt = "story thumbnail" placeholder="blur"/>
                             </div>
                             
                             <div className="profileImage-wrapper">
@@ -85,7 +85,7 @@ export default function Slider() {
                 <div className="user">
     
                     <div className="contentImage-wrapper">
-                        <Image src = {car} alt = "story thumbnail" />
+                        <Image src = {car} alt = "story thumbnail" placeholder="blur"/>
                     </div>
                     
                     <div className="profileImage-wrapper">
@@ -102,7 +102,7 @@ export default function Slider() {
                 <div className="user">
     
                     <div className="contentImage-wrapper">
-                        <Image src = {car} alt = "story thumbnail" />
+                        <Image src = {car} alt = "story thumbnail" placeholder="blur"/>
                     </div>
                     
                     <div className="profileImage-wrapper">
@@ -119,7 +119,7 @@ export default function Slider() {
                 <div className="user">
     
                     <div className="contentImage-wrapper">
-                        <Image src = {car} alt = "story thumbnail" />
+                        <Image src = {car} alt = "story thumbnail" placeholder="blur"/>
                     </div>
                     
                     <div className="profileImage-wrapper">
@@ -136,7 +136,7 @@ export default function Slider() {
                 <div className="user">
     
                     <div className="contentImage-wrapper">
-                        <Image src = {car} alt = "story thumbnail" />
+                        <Image src = {car} alt = "story thumbnail" placeholder="blur"/>
                     </div>
                     
                     <div className="profileImage-wrapper">
@@ -153,7 +153,7 @@ export default function Slider() {
                 <div className="user">
     
                     <div className="contentImage-wrapper">
-                        <Image src = {car} alt = "story thumbnail" />
+                        <Image src = {car} alt = "story thumbnail" placeholder="blur"/>
                     </div>
                     
                     <div className="profileImage-wrapper">
@@ -170,7 +170,7 @@ export default function Slider() {
                 <div className="user">
     
                     <div className="contentImage-wrapper">
-                        <Image src = {car} alt = "story thumbnail" />
+                        <Image src = {car} alt = "story thumbnail" placeholder="blur"/>
                     </div>
                     
                     <div className="profileImage-wrapper">
@@ -187,7 +187,7 @@ export default function Slider() {
                 <div className="user">
     
                     <div className="contentImage-wrapper">
-                        <Image src = {car} alt = "story thumbnail" />
+                        <Image src = {car} alt = "story thumbnail" placeholder="blur"/>
                     </div>
                     
                     <div className="profileImage-wrapper">
