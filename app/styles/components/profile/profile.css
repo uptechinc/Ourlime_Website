@@ -1,0 +1,22 @@
+.profile-main-container {
+  width: 100%;
+  height: 100%;
+}
+.profile-main-container .profile-top-section {
+  width: 100%;
+  box-shadow: 10px 10px black;
+  border-radius: 1rem;
+  border: 2px solid black;
+}
+.profile-main-container .profile-top-section .info-container {
+  width: 80%;
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+}
+.profile-main-container .profile-top-section .info-container .profile-image-container {
+  width: 50%;
+}
+.profile-main-container .profile-top-section .info-container .profile-image-container img {
+  width: 100%;
+}/*# sourceMappingURL=profile.css.map */

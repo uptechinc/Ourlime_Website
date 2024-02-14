@@ -1,3 +1,4 @@
+import '@/app/styles/components/profile/profile.css'
 import Image from 'next/image'
 import React, { memo } from 'react'
 import PropTypes from 'prop-types'
@@ -7,7 +8,7 @@ export default function profile() {
     return(
     <div className='profile-main-container'>
         <section className="profile-top-section">
-            <div className="">
+            <div className="info-container">
                 <div className="profile-image-container">
                     <Image src = {profilePicture} alt = "profile picture"/>
                 </div>
