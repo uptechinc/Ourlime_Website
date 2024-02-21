@@ -62,16 +62,28 @@ $grey: #f2f2f2;
                     gap: 1rem;
                     // margin-top: 0.5rem;
 
-                    button{
-                        background: transparent;
-                        width: 100%;
-                        padding: 2%;
-                        font-size: 1rem;
-                        outline: none;
-                        border-radius: 1rem;
-                        color: #333
+                    .activity-btn{
+                      background: linear-gradient(90deg, #D3FF54 3.42%, #56F9D2 95.89%);
+                      border: none;
+                      width: 50%;
+                      padding: 2%;
+                      font-size: 1rem;
+                      outline: none;
+                      border-radius: 1rem;
+                      color: #333;
+                    }
+
+                    .edit-btn{
+                      border-color: linear-gradient(90deg, #D3FF54 3.42%, #56F9D2 95.89%);
+                      width: 50%;
+                      padding: 2%;
+                      font-size: 1rem;
+                      outline: none;
+                      border-radius: 1rem;
+                      color: #333;
 
                     }
+
                 }
 
                 .numbers{
@@ -316,9 +328,44 @@ $grey: #f2f2f2;
               text-decoration: bold;
               border-bottom: none;
             }
-            p{
+            a{
               margin-left: auto;
             }
+          }
+          .communities-photos {
+            display: flex;
+            margin-top: 10px;
+            overflow-x: auto; /* for horizontal scroll */
+            width: 100%;  
+            height: 100%;
+          }
+          
+          .community {
+            margin-right: 10px;
+            position: relative;
+          }
+          
+          .community-image {
+            width: 100%; /* Adjust as needed */
+            height: 100%; /* Adjust as needed */
+            object-fit: cover;
+            border-radius: 8px; /* Adjust as needed */
+          }
+          
+          .new-posts-badge {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background-color: red;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 50%;
+            font-size: 0.7rem;
+          }
+          
+          .view-all {
+            cursor: pointer;
+            color: #0066ff;
           }
         }
 
@@ -352,6 +399,42 @@ $grey: #f2f2f2;
               margin-left: auto;
             }
           }
+
+          .following-photos {
+            display: flex;
+            margin-top: 10px;
+            overflow-x: auto; /* for horizontal scroll */
+            width: 100%;  
+            height: 100%;
+          }
+          
+          .following {
+            margin-right: 10px;
+            position: relative;
+          }
+          
+          .following-image {
+            width: 100%; /* Adjust as needed */
+            height: 100%; /* Adjust as needed */
+            object-fit: cover;
+            border-radius: 8px; /* Adjust as needed */
+          }
+          
+          .new-posts-badge {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background-color: red;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 50%;
+            font-size: 0.7rem;
+          }
+          
+          .view-all {
+            cursor: pointer;
+            color: #0066ff;
+          }
         }
 
         .photos-container{
@@ -384,6 +467,41 @@ $grey: #f2f2f2;
             p{
               margin-left: auto;
             }
+          }
+          .followers-photos {
+            display: flex;
+            margin-top: 10px;
+            overflow-x: auto; /* for horizontal scroll */
+            width: 100%;  
+            height: 100%;
+          }
+          
+          .followers {
+            margin-right: 10px;
+            position: relative;
+          }
+          
+          .followers-image {
+            width: 100%; /* Adjust as needed */
+            height: 100%; /* Adjust as needed */
+            object-fit: cover;
+            border-radius: 8px; /* Adjust as needed */
+          }
+          
+          .new-posts-badge {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background-color: red;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 50%;
+            font-size: 0.7rem;
+          }
+          
+          .view-all {
+            cursor: pointer;
+            color: #0066ff;
           }
         }
 

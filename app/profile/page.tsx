@@ -6,6 +6,14 @@ import admin from '@/public/images/OIP.jpg'
 import blackWoman from '@/public/images/blackWoman.jpg'
 import anime from '@/public/images/lucky star.jpg'
 
+
+const communitiesData = [
+    { imageUrl: '/images/hands.webp', name: 'Community 1' },
+    { imageUrl: '/images/computer.webp', name: 'Community 2' },
+    { imageUrl: '/images/car.jpg', name: 'Community 3', newPosts: 6 },
+    // ... add other communities as needed
+  ];
+
 export default function profile() {
     return(
         <div className='profile-main-container'>
@@ -18,8 +26,8 @@ export default function profile() {
                     <p className='nickname'>Darren Kowlessar</p>
                     <p className="mention">@dareen07</p>
                     <div className="profile-btns">
-                        <button>Edit</button>
-                        <button>Activities</button>
+                        <button className="edit-btn">Edit</button>
+                        <button className="activity-btn">Activities</button>
                     </div>
                     <div className="numbers">
                         <p>11 Following</p>
@@ -210,9 +218,23 @@ export default function profile() {
                         <div className="communities-info">
                             <h2>Communities</h2>
                             <h2>9</h2>
-                            <p>View all</p>
+                            <a className="view all">View all</a>
                         </div>
                         <div className="communities-photos">
+                            {communitiesData.map((community, index) => (
+                                <div className="community" key={index}>
+                                <Image 
+                                    src={community.imageUrl} 
+                                    alt={community.name} 
+                                    width={200} // Set appropriate width
+                                    height={200} // Set appropriate height
+                                    className="community-image"
+                                />
+                                {community.newPosts && (
+                                    <span className="new-posts-badge">{community.newPosts}</span>
+                                )}
+                                </div>
+                            ))}
                         </div>
                     </div>
                     <div className="likes-container">
@@ -225,6 +247,22 @@ export default function profile() {
                             <h2>11</h2>
                             <p>View all</p>
                         </div>
+                        <div className="following-photos">
+                            {communitiesData.map((community, index) => (
+                                <div className="following" key={index}>
+                                <Image 
+                                    src={community.imageUrl} 
+                                    alt={community.name} 
+                                    width={200} // Set appropriate width
+                                    height={200} // Set appropriate height
+                                    className="following-image"
+                                />
+                                {community.newPosts && (
+                                    <span className="new-posts-badge">{community.newPosts}</span>
+                                )}
+                                </div>
+                            ))}
+                        </div>
                     </div>
                     <div className="photos-container">
                         <h2>Photos</h2>
@@ -235,6 +273,22 @@ export default function profile() {
                             <h2>Followers</h2>
                             <h2>11</h2>
                             <p>View all</p>
+                        </div>
+                        <div className="followers-photos">
+                            {communitiesData.map((community, index) => (
+                                <div className="followers" key={index}>
+                                <Image 
+                                    src={community.imageUrl} 
+                                    alt={community.name} 
+                                    width={200} // Set appropriate width
+                                    height={200} // Set appropriate height
+                                    className="followers-image"
+                                />
+                                {community.newPosts && (
+                                    <span className="new-posts-badge">{community.newPosts}</span>
+                                )}
+                                </div>
+                            ))}
                         </div>
                     </div>
                     <div className="videos-container">
