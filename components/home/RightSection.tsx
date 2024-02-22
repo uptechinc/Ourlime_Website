@@ -1,7 +1,7 @@
 import Image from "next/image";
 import CommunitiesSlider from "./CommunitiesSlider";
 import StoriesSlider from "./StoriesSlider";
-import mailIcon from '@/public/images/mail icon.png'
+import mailIcon from '@/public/images/home/mail icon.png'
 import RefreshIcon from '@mui/icons-material/Refresh';
 export default function RightSection() {
     

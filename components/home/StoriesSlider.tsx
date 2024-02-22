@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image";
 import ourlimeImage from '@/public/images/ourlime logo.png'
-import car from '@/public/images/car.jpg'
+import car from '@/public/images/home/car.jpg'
 import { useEffect, useRef } from "react";
 import AddIcon from '@mui/icons-material/Add';
 export default function Slider() {

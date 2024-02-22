@@ -1,11 +1,11 @@
 import Image from "next/image";
 import ourlimeImage from '@/public/images/ourlime logo.png'
-import userPicture from '@/public/images/userPicture.png'
-import popUpButton from '@/public/images/Pop Up Button.svg'
-import blackWoman from '@/public/images/blackWoman.jpg'
-import sonic from '@/public/images/sonic.jpg'
-import tech from '@/public/images/tech.jpg'
-import trees from '@/public/images/trees.jpg'
+import userPicture from '@/public/images/home/userPicture.png'
+import popUpButton from '@/public/images/home/Pop Up Button.svg'
+import blackWoman from '@/public/images/home/blackWoman.jpg'
+import sonic from '@/public/images/home/sonic.jpg'
+import tech from '@/public/images/home/tech.jpg'
+import trees from '@/public/images/home/trees.jpg'
 export default function MiddleSection() {
     return (
         <section className="middle-section">

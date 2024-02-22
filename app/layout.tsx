@@ -1,11 +1,9 @@
 import type { ReactElement } from 'react';
 import { Inter } from 'next/font/google';
-import { Metadata } from '@/app/types/global';
+import { Metadata } from '@/types/global';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
-
-
 // SEO metadata customized for "ourlime.com" (hypothetical content)
 export const metadata: Metadata = {
   metadataBase: "https://ourlime.com", // Define the base URL for your site
@@ -28,7 +26,6 @@ export const metadata: Metadata = {
   },
 };
 
-
 // Fixed React component with proper type for children
 export default function RootLayout({
   children,
@@ -36,7 +33,7 @@ export default function RootLayout({
   children: ReactElement;
 }): ReactElement {
   return (
-    <html lang="en">
+      <html lang="en">
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -49,7 +46,19 @@ export default function RootLayout({
         <meta name="twitter:card" content="summary_large_image" />
       </head>
 
-      <body className={inter.className}>{children}</body>
-    </html>
+      <body className={inter.className}>
+        {children}
+        
+        <div className="btn-wrapper">
+        <svg width="378" height="362" viewBox="0 0 378 362" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="199" y1="-6" x2="199" y2="362" stroke="white" stroke-width="20"/>
+          <line x1="378" y1="188" x2="-8" y2="188" stroke="white" stroke-width="20"/>
+        </svg>
+
+        </div>
+
+
+        </body>
+      </html>
   );
 }

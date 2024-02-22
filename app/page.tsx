@@ -1,9 +1,7 @@
-import "@/app/styles/components/home/styles.css"
-import LeftSection from "@/app/components/home/LeftSection";
-import MiddleSection from "@/app/components/home/MiddleSection";
-import RightSection from "@/app/components/home/RightSection";
-// import CameraAltIcon from '@mui/icons-material/CameraAlt';
-
+import "@/styles/components/home/styles.css"
+import LeftSection from "@/components/home/LeftSection";
+import MiddleSection from "@/components/home/MiddleSection";
+import RightSection from "@/components/home/RightSection";
 export default function Home() {
   return (
     <main>

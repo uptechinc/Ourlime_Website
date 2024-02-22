@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ourlimeImage from '@/public/images/ourlime logo.png'
-import userPicture from '@/public/images/userPicture.png'
+import userPicture from '@/public/images/home/userPicture.png'
 import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 import SettingsIcon from '@mui/icons-material/Settings';
 import RefreshIcon from '@mui/icons-material/Refresh';
