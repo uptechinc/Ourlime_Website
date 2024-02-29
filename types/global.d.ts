@@ -1,4 +1,4 @@
-type Metadata = {
+export type Metadata = {
   metadataBase: string;
   title: string;
   description: string;
@@ -17,4 +17,7 @@ type Metadata = {
   };
 };
 
-export type { Metadata }; 
+export interface RootLayoutProps {
+  children: ReactElement;
+  hideButton?: boolean;
+}

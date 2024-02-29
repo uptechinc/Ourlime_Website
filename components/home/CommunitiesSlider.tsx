@@ -1,8 +1,8 @@
 import Image from "next/image";
-import gamingPicture from '@/public/images/gaming.jpg';
-import computerPicture from '@/public/images/computer.webp'
-import handsPicture from '@/public/images/hands.webp'
-import peoplePicture from '@/public/images/people.jpg'
+import gamingPicture from '@/public/images/home/gaming.jpg';
+import computerPicture from '@/public/images/home/computer.webp'
+import handsPicture from '@/public/images/home/hands.webp'
+import peoplePicture from '@/public/images/home/people.jpg'
 export default function CommunitiesSlider() {
     return (
         <div className="bottom">
