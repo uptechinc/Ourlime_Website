@@ -13,10 +13,11 @@ body, html{
   gap: 1rem;
   background-color: #c64d53;
   position: fixed;
-  width: 30px;
-  height: 30px;
+  width: .8rem;
+  height: .8rem;
   bottom: 5%;
-  right: 10%;
+  right: 5%;
   padding: 1%;
   border-radius: 50%;
+  cursor: pointer;
 }

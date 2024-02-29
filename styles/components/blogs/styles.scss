@@ -17,6 +17,25 @@ main{
         padding: 0% 2%;
         margin-bottom: 3%;
 
+        .header{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border-bottom: solid;
+            gap: 1%;
+            .star-icon{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 1%;
+                border-radius: 50%;
+                color: white;
+                background-color: #c64d53;
+                width: .8rem;
+                height: .8rem;
+            }
+        }
+
         h2{
             font-size: 1.5rem;
             font-weight: 600;
@@ -32,6 +51,7 @@ main{
             flex-wrap: wrap;
             align-items: left;
             gap: 1%;
+            margin-top: 1%;
 
             span{
                 background-color: #ebebeb;
@@ -39,6 +59,7 @@ main{
                 padding: .5rem;
                 font-size: 13px;
                 margin-bottom: 1%;
+                cursor: pointer;
             }
         }
     }
@@ -71,10 +92,10 @@ main{
                 width: 30%;
                 height: 15rem;
                 margin-bottom: 3%;
-
                 .post-thumbnail-wrapper{
                     width: 100%;
                     border-radius: 1rem;
+                    cursor: pointer;
                     
                     img{
                         width: 100%;
@@ -85,6 +106,9 @@ main{
                     }
                 }
 
+                .call-to-action{
+                    cursor: pointer;
+                }
                 .post-information{
                     display: flex;
                     flex-direction: row;
@@ -117,6 +141,7 @@ main{
     }
 
     .popular-posts-container{
+    
         h2{
             font-size: 1.5rem;
         }

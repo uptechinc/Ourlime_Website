@@ -8,7 +8,7 @@ import post4 from '@/public/images/blogs/post4.jpg'
 import post5 from '@/public/images/blogs/post5.jpg'
 import post6 from '@/public/images/blogs/post6.jpg'
 import post7 from '@/public/images/blogs/post7.jpg'
-import post8 from '@/public/images/blogs/post8.jpg'
+import post8 from '@/public/images/blogs/post8.jpeg'
 import post9 from '@/public/images/blogs/post9.jpg'
 
 export default function Blogs() {
@@ -19,7 +19,15 @@ export default function Blogs() {
         </header>
 
         <div className="categories-container">
-            <h2>Categories</h2>
+            <div className="header">
+                <span className='star-icon'>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M11,13.5V21.5H3V13.5H11M12,2L17.5,11H6.5L12,2M17.5,13C20,13 22,15 22,17.5C22,20 20,22 17.5,22C15,22 13,20 13,17.5C13,15 15,13 17.5,13Z"></path>
+                    </svg>
+                </span>
+
+                <h2>Categories</h2>
+
+            </div>
             <div className="filter-btns">
                 <span>Cars and Vehicles</span>
                 <span>Comedy</span>
@@ -43,7 +51,13 @@ export default function Blogs() {
         </div>
 
         <section className="recent-articles-container">
-            <h2>Most recent articles</h2>
+            <div className="header">
+                <span className='star-icon'>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M20,11H4V8H20M20,15H13V13H20M20,19H13V17H20M11,19H4V13H11M20.33,4.67L18.67,3L17,4.67L15.33,3L13.67,4.67L12,3L10.33,4.67L8.67,3L7,4.67L5.33,3L3.67,4.67L2,3V19A2,2 0 0,0 4,21H20A2,2 0 0,0 22,19V3L20.33,4.67Z"></path></svg>
+                </span>
+                <h2>Most recent articles</h2>
+
+            </div>
             <hr />
 
             <form>
@@ -216,14 +230,38 @@ export default function Blogs() {
         </section>
 
         <div className="popular-posts-container">
-            <h2>Popular posts</h2>
+            <div className='header'>
+                <svg className='star-icon' xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z">
+                    </path>
+                </svg>
+                <h2>Popular posts</h2>
+            </div>
+            
             <hr />
 
             <ol>
                 <li>
                         <div className="post-thumbnail-wrapper">
                             <Image 
-                            src = {post1} 
+                            src = {post5} 
+                            alt = "profile picture" 
+                            quality={100}/>
+                        </div>
+
+                        <div className="info-wrapper">
+                            <p className="call-to-action">Particle Size Analysis Market worth $596 million by 2028</p>
+                            
+                            <div className="post-information">
+                                <span>By</span><span>P N </span> ·
+                            </div>
+                        </div>
+                </li>
+
+                <li>
+                        <div className="post-thumbnail-wrapper">
+                            <Image 
+                            src = {post6} 
                             alt = "profile picture" 
                             quality={100}/>
                         </div>
@@ -240,16 +278,16 @@ export default function Blogs() {
                 <li>
                         <div className="post-thumbnail-wrapper">
                             <Image 
-                            src = {post1} 
+                            src = {post8} 
                             alt = "profile picture" 
                             quality={100}/>
                         </div>
 
                         <div className="info-wrapper">
-                            <p className="call-to-action">Unravelling the Forces Shaping Wearable Market Landscape in...</p>
+                            <p className="call-to-action">Unleashing the Fun: Kheloyar App – Download Now for Ultimate Gaming Excitement!</p>
                             
                             <div className="post-information">
-                                <span>By</span><span>Sunita Lawankar </span> ·
+                                <span>By</span><span>suman joneast </span> ·
                             </div>
                         </div>
                 </li>
@@ -257,16 +295,16 @@ export default function Blogs() {
                 <li>
                         <div className="post-thumbnail-wrapper">
                             <Image 
-                            src = {post1} 
+                            src = {post7} 
                             alt = "profile picture" 
                             quality={100}/>
                         </div>
 
                         <div className="info-wrapper">
-                            <p className="call-to-action">Unravelling the Forces Shaping Wearable Market Landscape in...</p>
+                            <p className="call-to-action">Top 5 Reasons Kheloyar is the Premier Choice for Cricket Betting in India</p>
                             
                             <div className="post-information">
-                                <span>By</span><span>Sunita Lawankar </span> ·
+                                <span>By</span><span>joneast digital </span> ·
                             </div>
                         </div>
                 </li>
@@ -274,33 +312,16 @@ export default function Blogs() {
                 <li>
                         <div className="post-thumbnail-wrapper">
                             <Image 
-                            src = {post1} 
+                            src = {post9} 
                             alt = "profile picture" 
                             quality={100}/>
                         </div>
 
                         <div className="info-wrapper">
-                            <p className="call-to-action">Unravelling the Forces Shaping Wearable Market Landscape in...</p>
+                            <p className="call-to-action">Enhancing the Process of Inventory Keeping</p>
                             
                             <div className="post-information">
-                                <span>By</span><span>Sunita Lawankar </span> ·
-                            </div>
-                        </div>
-                </li>
-
-                <li>
-                        <div className="post-thumbnail-wrapper">
-                            <Image 
-                            src = {post1} 
-                            alt = "profile picture" 
-                            quality={100}/>
-                        </div>
-
-                        <div className="info-wrapper">
-                            <p className="call-to-action">Unravelling the Forces Shaping Wearable Market Landscape in...</p>
-                            
-                            <div className="post-information">
-                                <span>By</span><span>Sunita Lawankar </span> ·
+                                <span>By</span><span>FIeld Promax </span> ·
                             </div>
                         </div>
                 </li>
