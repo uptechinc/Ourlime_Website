@@ -219,7 +219,7 @@ export default function Blogs() {
             <div className="load-more">
                 {/* Down arrow*/}
                 <svg width="88" height="75" viewBox="0 0 88 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M83.9264 2.84634L44.0005 72L4.07461 2.84634L43.4806 17.407L44.0005 17.5991L44.5204 17.407L83.9264 2.84634Z" stroke="#C64D53" stroke-width="3"/>
+                    <path d="M83.9264 2.84634L44.0005 72L4.07461 2.84634L43.4806 17.407L44.0005 17.5991L44.5204 17.407L83.9264 2.84634Z" stroke="#C64D53" strokeWidth="3"/>
                 </svg>
 
 

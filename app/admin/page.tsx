@@ -1,18 +1,9 @@
 import '@/styles/components/admin/styles.css'
-import logo from '@/public/images/logo-long.png'
-import Image from 'next/image'
+import Header from '@/components/admin/Header' 
 export default function AdminPage() {
   return (
       <div>
-        <header>
-          <div className="logo-wrapper">
-            <Image 
-              src = {logo}
-              alt="logo"
-              priority
-              />
-          </div>
-        </header>
+        <Header />
       </div>
   )
 }
