@@ -15,7 +15,7 @@ export default function Navbar() {
   return (
     <nav>
         <ul>
-            <li><DashboardIcon />Dashboard <AddRoundedIcon className="plus-icon" /></li>
+            <li className='dashboard-item'><DashboardIcon /><span>Dashboard</span></li>
             <li><SettingsIcon />Settings <AddRoundedIcon className="plus-icon" /></li>
             <li><ViewAgendaRoundedIcon />Manage Features <AddRoundedIcon className="plus-icon" /></li>
             <li><LanguageRoundedIcon />Languages <AddRoundedIcon className="plus-icon" /></li>
