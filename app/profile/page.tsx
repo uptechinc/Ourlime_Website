@@ -1,4 +1,4 @@
-import '@/app/styles/components/profile/profile.css'
+import '@/styles/components/profile/profile.css'
 import Image from 'next/image'
 import React, { memo } from 'react'
 import profilePicture from '@/public/images/profilePicture.webp'
@@ -223,13 +223,15 @@ export default function profile() {
                         <div className="communities-photos">
                             {communitiesData.map((community, index) => (
                                 <div className="community" key={index}>
-                                <Image 
-                                    src={community.imageUrl} 
-                                    alt={community.name} 
-                                    width={200} // Set appropriate width
-                                    height={200} // Set appropriate height
-                                    className="community-image"
-                                />
+                                    <div className="image-wrapper">
+                                        <Image 
+                                            src={community.imageUrl} 
+                                            alt={community.name} 
+                                            width={200} // Set appropriate width
+                                            height={200} // Set appropriate height
+                                            className="community-image"
+                                        />
+                                    </div>
                                 {community.newPosts && (
                                     <span className="new-posts-badge">{community.newPosts}</span>
                                 )}
@@ -250,13 +252,15 @@ export default function profile() {
                         <div className="following-photos">
                             {communitiesData.map((community, index) => (
                                 <div className="following" key={index}>
-                                <Image 
-                                    src={community.imageUrl} 
-                                    alt={community.name} 
-                                    width={200} // Set appropriate width
-                                    height={200} // Set appropriate height
-                                    className="following-image"
-                                />
+                                    <div className="image-wrapper">
+                                        <Image 
+                                        src={community.imageUrl} 
+                                        alt={community.name} 
+                                        width={200} // Set appropriate width
+                                        height={200} // Set appropriate height
+                                        className="following-image"
+                                        />
+                                    </div>
                                 {community.newPosts && (
                                     <span className="new-posts-badge">{community.newPosts}</span>
                                 )}
@@ -277,13 +281,15 @@ export default function profile() {
                         <div className="followers-photos">
                             {communitiesData.map((community, index) => (
                                 <div className="followers" key={index}>
-                                <Image 
-                                    src={community.imageUrl} 
-                                    alt={community.name} 
-                                    width={200} // Set appropriate width
-                                    height={200} // Set appropriate height
-                                    className="followers-image"
-                                />
+                                    <div className="image-wrapper">
+                                        <Image 
+                                        src={community.imageUrl} 
+                                        alt={community.name} 
+                                        width={200} // Set appropriate width
+                                        height={200} // Set appropriate height
+                                        className="followers-image"
+                                        />
+                                    </div>
                                 {community.newPosts && (
                                     <span className="new-posts-badge">{community.newPosts}</span>
                                 )}

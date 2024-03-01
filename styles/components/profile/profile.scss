@@ -35,6 +35,7 @@ $grey: #f2f2f2;
                 img{
                     width: 100%;
                     height: 100%;
+                    object-fit: cover;
                     border-radius: 50%; 
                 }
             }
@@ -345,11 +346,15 @@ $grey: #f2f2f2;
             position: relative;
           }
           
-          .community-image {
-            width: 100%; /* Adjust as needed */
-            height: 100%; /* Adjust as needed */
-            object-fit: cover;
-            border-radius: 8px; /* Adjust as needed */
+          .image-wrapper{
+            height: 150px;
+            width: 150px;
+            .community-image {
+              width: 100%; /* Adjust as needed */
+              height: 100%; /* Adjust as needed */
+              object-fit: cover;
+              border-radius: 8px; /* Adjust as needed */
+            }
           }
           
           .new-posts-badge {
@@ -413,11 +418,15 @@ $grey: #f2f2f2;
             position: relative;
           }
           
-          .following-image {
-            width: 100%; /* Adjust as needed */
-            height: 100%; /* Adjust as needed */
-            object-fit: cover;
-            border-radius: 8px; /* Adjust as needed */
+          .image-wrapper{
+            width: 150px;
+            height: 150px;
+            .following-image {
+              width: 100%; /* Adjust as needed */
+              height: 100%; /* Adjust as needed */
+              object-fit: cover;
+              border-radius: 8px; /* Adjust as needed */
+            }
           }
           
           .new-posts-badge {
@@ -481,11 +490,15 @@ $grey: #f2f2f2;
             position: relative;
           }
           
-          .followers-image {
-            width: 100%; /* Adjust as needed */
-            height: 100%; /* Adjust as needed */
-            object-fit: cover;
-            border-radius: 8px; /* Adjust as needed */
+          .image-wrapper{
+            width: 150px;
+            height: 150px;
+            .followers-image {
+              width: 100%; /* Adjust as needed */
+              height: 100%; /* Adjust as needed */
+              object-fit: cover;
+              border-radius: 8px; /* Adjust as needed */
+            }
           }
           
           .new-posts-badge {
