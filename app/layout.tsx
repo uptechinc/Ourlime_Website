@@ -51,8 +51,8 @@ export default function RootLayout({
         
         <div className="btn-wrapper">
         <svg width="378" height="362" viewBox="0 0 378 362" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <line x1="199" y1="-6" x2="199" y2="362" stroke="white" stroke-width="20"/>
-          <line x1="378" y1="188" x2="-8" y2="188" stroke="white" stroke-width="20"/>
+          <line x1="199" y1="-6" x2="199" y2="362" stroke="white" strokeWidth="20"/>
+          <line x1="378" y1="188" x2="-8" y2="188" stroke="white" strokeWidth="20"/>
         </svg>
 
         </div>

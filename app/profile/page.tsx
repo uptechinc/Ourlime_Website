@@ -8,9 +8,9 @@ import anime from '@/public/images/profile/lucky star.jpg'
 
 
 const communitiesData = [
-    { imageUrl: '/images/hands.webp', name: 'Community 1' },
-    { imageUrl: '/images/computer.webp', name: 'Community 2' },
-    { imageUrl: '/images/car.jpg', name: 'Community 3', newPosts: 6 },
+    { imageUrl: '/images/home/hands.webp', name: 'Community 1' },
+    { imageUrl: '/images/home/computer.webp', name: 'Community 2' },
+    { imageUrl: '/images/home/car.jpg', name: 'Community 3', newPosts: 6 },
     // ... add other communities as needed
   ];
 
