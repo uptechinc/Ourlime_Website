@@ -4,20 +4,21 @@ body, html {
 body .btn-wrapper, html .btn-wrapper {
   display: none;
 }
-body header, html header {
+
+header {
   padding: 2%;
   display: flex;
   flex-direction: row;
   gap: 3%;
   align-items: center;
 }
-body header .left, html header .left {
+header .left {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 5%;
 }
-body header .left .logo-wrapper, html header .left .logo-wrapper {
+header .left .logo-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,13 +27,13 @@ body header .left .logo-wrapper, html header .left .logo-wrapper {
   width: 20%;
   padding: 3%;
 }
-body header .left .logo-wrapper img, html header .left .logo-wrapper img {
+header .left .logo-wrapper img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-body header .left form, html header .left form {
+header .left form {
   display: flex;
   align-items: center;
   background-color: #434343;
@@ -40,17 +41,17 @@ body header .left form, html header .left form {
   border-radius: 5rem;
   height: 1rem;
 }
-body header .left form button, body header .left form input, html header .left form button, html header .left form input {
+header .left form button, header .left form input {
   background-color: transparent;
   border: none;
   font-size: 1rem;
   outline: none;
   color: white;
 }
-body header .left form button:hover, html header .left form button:hover {
+header .left form button:hover {
   cursor: pointer;
 }
-body header .right, html header .right {
+header .right {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -58,33 +59,33 @@ body header .right, html header .right {
   margin-left: auto;
   width: 25%;
 }
-body header .right .nav-link, html header .right .nav-link {
+header .right .nav-link {
   color: white;
 }
-body header .right .profile-container, html header .right .profile-container {
+header .right .profile-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 1%;
 }
-body header .right .profile-container .profile-picture-wrapper, html header .right .profile-container .profile-picture-wrapper {
+header .right .profile-container .profile-picture-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   width: 15%;
 }
-body header .right .profile-container .profile-picture-wrapper img, html header .right .profile-container .profile-picture-wrapper img {
+header .right .profile-container .profile-picture-wrapper img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-body header .right .profile-container p, html header .right .profile-container p {
+header .right .profile-container p {
   color: white;
 }
-body header .right .profile-container p::after, html header .right .profile-container p::after {
+header .right .profile-container p::after {
   display: inline-block;
   margin-left: 0.255em;
   vertical-align: 0.255em;
@@ -93,4 +94,17 @@ body header .right .profile-container p::after, html header .right .profile-cont
   border-right: 0.3em solid transparent;
   border-bottom: 0;
   border-left: 0.3em solid transparent;
+}
+
+nav ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.7019607843);
+  list-style: none;
+  padding: 1%;
+  gap: 1%;
+}
+nav ul li .plus-icon {
+  margin-left: auto;
 }/*# sourceMappingURL=styles.css.map */

@@ -2,6 +2,7 @@ body, html{
     background-color: #222222 !important;
 
     .btn-wrapper{display: none;}
+}
 
 header{
     padding: 2%;
@@ -98,4 +99,20 @@ header{
         }
     }
 }
+
+nav{
+    ul{
+
+        li{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            color: #ffffffb3;;
+            list-style: none;
+            padding: 1%;
+            gap: 1%;
+
+            .plus-icon{margin-left: auto;}
+        }
+    }
 }
