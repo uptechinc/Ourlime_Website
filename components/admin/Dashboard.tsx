@@ -4,6 +4,7 @@ import BorderColorRoundedIcon from '@mui/icons-material/BorderColorRounded';
 import FlagRoundedIcon from '@mui/icons-material/FlagRounded';
 import MessageRoundedIcon from '@mui/icons-material/MessageRounded';
 import SportsEsportsRoundedIcon from '@mui/icons-material/SportsEsportsRounded';
+import Visualization from './Visualization';
 export default function Dashboard() {
     return (
     <div className="dashboard">
@@ -61,6 +62,11 @@ export default function Dashboard() {
                     <MessageRoundedIcon /> 10
                 </div>
             </div>
+        </div>
+
+        <div className="visualization">
+            <h2>This Year</h2>
+            <Visualization />
         </div>
     </div>
     )

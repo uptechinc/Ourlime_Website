@@ -2,6 +2,7 @@ body, html{
     background-color: #222222 !important;
 
     .btn-wrapper{display: none;}
+
 }
 
 header{
@@ -134,14 +135,17 @@ nav{
 main{
     display: flex;
     flex-direction: row;
-    height: 100%;
-    width: 100%;
-    position: fixed;
+    height: 100vh;
+    width: 98%;
+    position: relative;
+
+
     .dashboard{
         width: 75%;
         border-radius: 1rem;
         background-color: #f4f5fd;
         padding-left: 2rem;
+        padding-right: 2rem;
 
         h1{
             font-weight: 600;
@@ -216,5 +220,26 @@ main{
                 }
             }
         }
+
+
+        
     }
+
+    @media(max-width: 768px){
+        .dashboard{
+            .stats{
+                flex-direction: column;
+
+                .flex-box{
+                    width: 95%;
+
+                    .bottom svg{
+                        padding: 3%;
+                    }
+                }
+            }
+        }
+        
+    }
+
 }

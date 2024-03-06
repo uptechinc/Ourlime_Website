@@ -129,15 +129,16 @@ nav ul .dashboard-item span::before {
 main {
   display: flex;
   flex-direction: row;
-  height: 100%;
-  width: 100%;
-  position: fixed;
+  height: 100vh;
+  width: 98%;
+  position: relative;
 }
 main .dashboard {
   width: 75%;
   border-radius: 1rem;
   background-color: #f4f5fd;
   padding-left: 2rem;
+  padding-right: 2rem;
 }
 main .dashboard h1 {
   font-weight: 600;
@@ -206,4 +207,15 @@ main .dashboard .stats .flex-box:nth-child(7) svg {
 }
 main .dashboard .stats .flex-box:nth-child(8) svg {
   background-color: #c0ebfe;
+}
+@media (max-width: 768px) {
+  main .dashboard .stats {
+    flex-direction: column;
+  }
+  main .dashboard .stats .flex-box {
+    width: 95%;
+  }
+  main .dashboard .stats .flex-box .bottom svg {
+    padding: 3%;
+  }
 }/*# sourceMappingURL=styles.css.map */

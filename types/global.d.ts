@@ -17,7 +17,16 @@ export type Metadata = {
   };
 };
 
-export interface RootLayoutProps {
+export type RootLayoutProps = {
   children: ReactElement;
   hideButton?: boolean;
+}
+
+export type Data = {
+  month: string;
+  users: number;
+  posts: number;
+  pages: number;
+  groups: number;
+  [key: string]: string | number; // Allow dynamic property access
 }
