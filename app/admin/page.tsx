@@ -1,16 +1,9 @@
-import '@/styles/components/admin/styles.css'
-import Header from '@/components/admin/Header' 
-import Navbar from '@/components/admin/Navbar' 
-import Dashboard from '@/components/admin/Dashboard'
+import Dashboard from "@/components/admin/Dashboard"
+import AdminLayout from "@/components/comm/AdminLayout"
 export default function AdminPage() {
   return (
-      <div>
-        <Header />
-
-        <main>
-          <Navbar />
-          <Dashboard />
-        </main>
-      </div>
+      <AdminLayout>
+        <Dashboard />
+      </AdminLayout>
   )
 }

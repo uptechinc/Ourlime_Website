@@ -1,5 +1,6 @@
 body, html {
   background-color: #222222 !important;
+  overflow: hidden;
 }
 body .btn-wrapper, html .btn-wrapper {
   display: none;
@@ -114,16 +115,22 @@ nav ul li {
 nav ul li .plus-icon {
   margin-left: auto;
 }
-nav ul .dashboard-item span::before {
-  display: inline-block;
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 50%;
-  color: #f2f2f2;
-  border: 15px solid transparent;
-  border-right-color: #f4f5fd;
-  margin-top: -15px;
+nav ul .dropdown-content {
+  padding: 0;
+  max-height: 0; /* Set initial height to 0 */
+  overflow: hidden; /* Hide content that overflows the max-height */
+  transition: max-height 1s ease-out; /* Smooth transition for height change */
+  width: 100%;
+  z-index: 1;
+}
+nav ul .show {
+  max-height: 5000px; /* Adjust the max-height to your desired value */
+  transition: max-height 1s ease-in; /* Optional transition effect */
+}
+nav ul .dropdown-content a {
+  text-decoration: none;
+  display: block;
+  color: rgba(255, 255, 255, 0.7019607843);
 }
 
 main {
@@ -132,6 +139,7 @@ main {
   height: 100vh;
   width: 98%;
   position: relative;
+  overflow-y: scroll;
 }
 main .dashboard {
   width: 75%;
@@ -157,8 +165,9 @@ main .dashboard .stats {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-top: 3%;
+  margin-bottom: 3%;
 }
 main .dashboard .stats .flex-box {
   width: 18%;
@@ -207,6 +216,11 @@ main .dashboard .stats .flex-box:nth-child(7) svg {
 }
 main .dashboard .stats .flex-box:nth-child(8) svg {
   background-color: #c0ebfe;
+}
+main .dashboard .visualization {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 3%;
 }
 @media (max-width: 768px) {
   main .dashboard .stats {
