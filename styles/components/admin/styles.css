@@ -27,6 +27,7 @@ header .left .logo-wrapper {
   border-radius: 1rem;
   width: 20%;
   padding: 3%;
+  cursor: pointer;
 }
 header .left .logo-wrapper img {
   width: 100%;

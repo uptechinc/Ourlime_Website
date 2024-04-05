@@ -1,12 +1,15 @@
+'use client'
 import Image from 'next/image'
 import logo from '@/public/images/logo-long.png'
 import ourlimeProfilePicture from '@/public/images/transparent ourlime logo.png'
-
+import { useRouter } from 'next/navigation';
 export default function Header() {
+    const router = useRouter();
+
     return (
         <header>
             <div className="left">
-                <div className="logo-wrapper">
+                <div className="logo-wrapper" onClick={()=>router.push('/')}>
                     <Image 
                         src = {logo}
                         alt="logo"

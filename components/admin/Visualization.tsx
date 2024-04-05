@@ -1,4 +1,5 @@
-'use client';
+'use client'
+
 import React, { useState } from "react";
 import * as d3 from "d3";
 import { Data } from "@/types/global";
