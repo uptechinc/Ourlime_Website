@@ -1,6 +1,6 @@
 body, html {
   background-color: #222222 !important;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 body .btn-wrapper, html .btn-wrapper {
   display: none;
@@ -128,7 +128,7 @@ nav ul .show {
   max-height: 5000px; /* Adjust the max-height to your desired value */
   transition: max-height 1s ease-in; /* Optional transition effect */
 }
-nav ul .dropdown-content a {
+nav ul .dropdown-content a, nav ul .dashboard-item a {
   text-decoration: none;
   display: block;
   color: rgba(255, 255, 255, 0.7019607843);
@@ -137,10 +137,8 @@ nav ul .dropdown-content a {
 main {
   display: flex;
   flex-direction: row;
-  height: 100vh;
   width: 98%;
   position: relative;
-  overflow-y: scroll;
 }
 main .layout, main .dashboard {
   width: 75%;
@@ -227,23 +225,44 @@ main .layout .visualization, main .dashboard .visualization {
 main .general-configuration {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
-main .general-configuration .maintenance {
+main .general-configuration .left, main .general-configuration .right {
+  width: 47%;
+}
+main .general-configuration .left .button-layout, main .general-configuration .right .button-layout {
+  margin-bottom: 5%;
+  background-color: white;
+  padding: 1% 3%;
+  border-radius: 1rem;
+  width: 100%;
+}
+main .general-configuration .left .button-layout .wrapper, main .general-configuration .right .button-layout .wrapper {
   display: flex;
   flex-direction: column;
 }
-main .general-configuration .maintenance .top {
+main .general-configuration .left .button-layout .wrapper .sub-heading, main .general-configuration .right .button-layout .wrapper .sub-heading {
+  font-weight: 400;
+}
+main .general-configuration .left .button-layout .wrapper input, main .general-configuration .right .button-layout .wrapper input {
+  height: 2rem;
+  width: 80%;
+}
+main .general-configuration .left .button-layout .wrapper span, main .general-configuration .right .button-layout .wrapper span {
+  font-size: 0.9rem;
+}
+main .general-configuration .left .button-layout .wrapper .top, main .general-configuration .right .button-layout .wrapper .top {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-main .general-configuration .maintenance .top span {
+main .general-configuration .left .button-layout .wrapper .top span, main .general-configuration .right .button-layout .wrapper .top span {
   background-color: rgb(219, 219, 219);
   padding: 3%;
   border-radius: 1rem;
 }
-main .general-configuration .maintenance .top .switch {
+main .general-configuration .left .button-layout .wrapper .top .switch, main .general-configuration .right .button-layout .wrapper .top .switch {
   background-color: #be3e44;
   border-radius: 5rem;
   width: 3.5rem;
@@ -253,13 +272,13 @@ main .general-configuration .maintenance .top .switch {
   padding-left: 3%;
   cursor: pointer;
 }
-main .general-configuration .maintenance .top .switch .button {
+main .general-configuration .left .button-layout .wrapper .top .switch .button, main .general-configuration .right .button-layout .wrapper .top .switch .button {
   border-radius: 50%;
   background-color: #ce464a;
   color: white;
   animation: slideLeft 0.2s ease-out forwards;
 }
-main .general-configuration .maintenance .top .switch .switched {
+main .general-configuration .left .button-layout .wrapper .top .switch .switched, main .general-configuration .right .button-layout .wrapper .top .switch .switched {
   background-color: #1abc9c;
   border-radius: 50%;
   color: white;
@@ -281,8 +300,14 @@ main .general-configuration .maintenance .top .switch .switched {
     transform: translateX(0%);
   }
 }
-main .general-configuration .maintenance .top .switchedBackground {
+main .general-configuration .left .button-layout .wrapper .top .switchedBackground, main .general-configuration .right .button-layout .wrapper .top .switchedBackground {
   background-color: #16a085;
+}
+main .general-configuration .left .button-layout .wrapper .bottom, main .general-configuration .right .button-layout .wrapper .bottom {
+  font-size: 0.7rem;
+}
+main .general-configuration .left .button-layout .wrapper hr, main .general-configuration .right .button-layout .wrapper hr {
+  width: 100%;
 }
 @media (max-width: 768px) {
   main .dashboard .stats {

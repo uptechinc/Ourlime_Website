@@ -5,6 +5,7 @@ import RightSection from "@/components/home/RightSection";
 /* 
   TODO: 
       -ADMIN PAGE: 
+        - SETTINGS [Profile Background Change, USER INVITE SYSTEM, GOOGLE AUTH, ACCOUNT VALIDATION, NOTIFICATIONS] 
         - MANAGE FEATURES[STORE, FORUMS, GAMES, CATEGORIES]
         - USERS[Affiliates System]
 */
