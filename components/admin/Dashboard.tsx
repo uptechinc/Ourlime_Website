@@ -5,14 +5,10 @@ import FlagRoundedIcon from '@mui/icons-material/FlagRounded';
 import MessageRoundedIcon from '@mui/icons-material/MessageRounded';
 import SportsEsportsRoundedIcon from '@mui/icons-material/SportsEsportsRounded';
 import Visualization from './Visualization';
+import TopNav from '../comm/TopNav';
 export default function Dashboard() {
     return (
     <div className="dashboard">
-        <h1>Welcome back, Uptech Incorporated Ltd</h1>
-        <div className='nav'>
-            <HomeRoundedIcon /> <span>Home</span> &gt; <a>DASHBOARD</a>
-        </div>
-
         <div className="stats">
             <div className='flex-box'>
                 <p>Total Users</p>

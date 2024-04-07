@@ -142,27 +142,27 @@ main {
   position: relative;
   overflow-y: scroll;
 }
-main .dashboard {
+main .layout, main .dashboard {
   width: 75%;
   border-radius: 1rem;
   background-color: #f4f5fd;
   padding-left: 2rem;
   padding-right: 2rem;
 }
-main .dashboard h1 {
+main .layout h1, main .dashboard h1 {
   font-weight: 600;
   font-size: 23px;
 }
-main .dashboard .nav {
+main .layout .top-nav, main .dashboard .top-nav {
   display: flex;
   flex-direction: row;
   gap: 1%;
   align-items: center;
 }
-main .dashboard a {
+main .layout a, main .dashboard a {
   color: #c64d53;
 }
-main .dashboard .stats {
+main .layout .stats, main .dashboard .stats {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -170,7 +170,7 @@ main .dashboard .stats {
   margin-top: 3%;
   margin-bottom: 3%;
 }
-main .dashboard .stats .flex-box {
+main .layout .stats .flex-box, main .dashboard .stats .flex-box {
   width: 18%;
   background-color: white;
   border-radius: 1rem;
@@ -182,7 +182,7 @@ main .dashboard .stats .flex-box {
   margin-bottom: 2%;
   cursor: pointer;
 }
-main .dashboard .stats .flex-box .bottom {
+main .layout .stats .flex-box .bottom, main .dashboard .stats .flex-box .bottom {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -190,35 +190,35 @@ main .dashboard .stats .flex-box .bottom {
   font-size: 1.5rem;
   font-weight: 800;
 }
-main .dashboard .stats .flex-box svg {
+main .layout .stats .flex-box svg, main .dashboard .stats .flex-box svg {
   padding: 5%;
   border-radius: 50%;
 }
-main .dashboard .stats .flex-box:first-child svg {
+main .layout .stats .flex-box:first-child svg, main .dashboard .stats .flex-box:first-child svg {
   background-color: #cad1f6;
 }
-main .dashboard .stats .flex-box:nth-child(2) svg {
+main .layout .stats .flex-box:nth-child(2) svg, main .dashboard .stats .flex-box:nth-child(2) svg {
   background-color: #c0ebfe;
 }
-main .dashboard .stats .flex-box:nth-child(3) svg {
+main .layout .stats .flex-box:nth-child(3) svg, main .dashboard .stats .flex-box:nth-child(3) svg {
   background-color: #fff0c5;
 }
-main .dashboard .stats .flex-box:nth-child(4) svg {
+main .layout .stats .flex-box:nth-child(4) svg, main .dashboard .stats .flex-box:nth-child(4) svg {
   background-color: #f5c7e4;
 }
-main .dashboard .stats .flex-box:nth-child(5) svg {
+main .layout .stats .flex-box:nth-child(5) svg, main .dashboard .stats .flex-box:nth-child(5) svg {
   background-color: #c2f0da;
 }
-main .dashboard .stats .flex-box:nth-child(6) svg {
+main .layout .stats .flex-box:nth-child(6) svg, main .dashboard .stats .flex-box:nth-child(6) svg {
   background-color: #cad1f6;
 }
-main .dashboard .stats .flex-box:nth-child(7) svg {
+main .layout .stats .flex-box:nth-child(7) svg, main .dashboard .stats .flex-box:nth-child(7) svg {
   background-color: #cad1f6;
 }
-main .dashboard .stats .flex-box:nth-child(8) svg {
+main .layout .stats .flex-box:nth-child(8) svg, main .dashboard .stats .flex-box:nth-child(8) svg {
   background-color: #c0ebfe;
 }
-main .dashboard .visualization {
+main .layout .visualization, main .dashboard .visualization {
   background-color: white;
   border-radius: 1rem;
   padding: 3%;

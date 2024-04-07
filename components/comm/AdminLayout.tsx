@@ -2,6 +2,7 @@ import '@/styles/components/admin/styles.css'
 import Header from '@/components/admin/Header'
 import Navbar from '@/components/admin/Navbar'
 import Dashboard from '@/components/admin/Dashboard'
+import TopNav from './TopNav'
 import { ReactNode } from 'react'
 
 export default function AdminLayout({ children }: { children: ReactNode }) {
@@ -11,7 +12,9 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
 
       <main>
         <Navbar />
-          {children}  
+          <div className="layout">
+            <TopNav />
+          </div> 
       </main>
     </div>
   )
