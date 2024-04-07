@@ -251,6 +251,75 @@ main{
 
         
     }
+    
+    .general-configuration{
+        display: flex;
+        flex-direction: row;
+
+        .maintenance{
+            display: flex;
+            flex-direction: column;
+
+            .top{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+
+                span{
+                    background-color: rgb(219, 219, 219);
+                    padding: 3%;
+                    border-radius: 1rem;
+                }
+
+                .switch{
+                    background-color: #be3e44;
+                    border-radius: 5rem;
+                    width: 3.5rem;
+                    height: 2rem;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 3%;
+                    cursor: pointer;
+
+                    .button{
+                        border-radius: 50%;
+                        background-color: #ce464a;
+                        color: white;
+                        animation: slideLeft 0.2s ease-out forwards;
+                    }
+
+                    .switched{
+                        background-color: #1abc9c;
+                        border-radius: 50%;
+                        color: white;
+                        animation: slideRight 0.2s ease-in forwards;
+                    }
+
+                    @keyframes slideRight{
+                        0%{
+                            transform: translateX(0%);
+                        }
+                        100%{
+                            transform: translateX(100%);
+                        }
+                    }
+
+                    @keyframes slideLeft{
+                        0%{
+                            transform: translateX(100%);
+                        }
+                        100%{
+                            transform: translateX(0%);
+                        }
+                    }
+                }
+                .switchedBackground{
+                    background-color: #16a085;
+                }
+            }
+        }
+    }
 
     @media(max-width: 768px){
         .dashboard{
