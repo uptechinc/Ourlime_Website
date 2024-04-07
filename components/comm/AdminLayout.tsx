@@ -14,6 +14,7 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
         <Navbar />
           <div className="layout">
             <TopNav />
+            {children}
           </div> 
       </main>
     </div>
