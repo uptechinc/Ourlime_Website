@@ -41,7 +41,7 @@ export default function Navbar() {
     return (
     <nav>
         <ul>
-            <li className='dashboard-item'><DashboardIcon /><span>Dashboard</span></li>
+            <li className='dashboard-item'><DashboardIcon /><Link href="/admin">Dashboard</Link></li>
             
             <li onClick={()=> toggleDropDown('settings')}>
                 <SettingsIcon />Settings <AddRoundedIcon className="plus-icon" />

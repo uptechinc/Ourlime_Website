@@ -1,6 +1,6 @@
 body, html {
   background-color: #222222 !important;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 body .btn-wrapper, html .btn-wrapper {
   display: none;
@@ -128,7 +128,7 @@ nav ul .show {
   max-height: 5000px; /* Adjust the max-height to your desired value */
   transition: max-height 1s ease-in; /* Optional transition effect */
 }
-nav ul .dropdown-content a {
+nav ul .dropdown-content a, nav ul .dashboard-item a {
   text-decoration: none;
   display: block;
   color: rgba(255, 255, 255, 0.7019607843);
@@ -137,32 +137,31 @@ nav ul .dropdown-content a {
 main {
   display: flex;
   flex-direction: row;
-  height: 100vh;
   width: 98%;
   position: relative;
-  overflow-y: scroll;
 }
-main .dashboard {
+main .layout, main .dashboard {
   width: 75%;
   border-radius: 1rem;
   background-color: #f4f5fd;
   padding-left: 2rem;
   padding-right: 2rem;
 }
-main .dashboard h1 {
+main .layout h1, main .dashboard h1 {
   font-weight: 600;
   font-size: 23px;
 }
-main .dashboard .nav {
+main .layout .top-nav, main .dashboard .top-nav {
   display: flex;
   flex-direction: row;
   gap: 1%;
   align-items: center;
+  margin-bottom: 2%;
 }
-main .dashboard a {
+main .layout a, main .dashboard a {
   color: #c64d53;
 }
-main .dashboard .stats {
+main .layout .stats, main .dashboard .stats {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -170,7 +169,7 @@ main .dashboard .stats {
   margin-top: 3%;
   margin-bottom: 3%;
 }
-main .dashboard .stats .flex-box {
+main .layout .stats .flex-box, main .dashboard .stats .flex-box {
   width: 18%;
   background-color: white;
   border-radius: 1rem;
@@ -182,7 +181,7 @@ main .dashboard .stats .flex-box {
   margin-bottom: 2%;
   cursor: pointer;
 }
-main .dashboard .stats .flex-box .bottom {
+main .layout .stats .flex-box .bottom, main .dashboard .stats .flex-box .bottom {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -190,38 +189,125 @@ main .dashboard .stats .flex-box .bottom {
   font-size: 1.5rem;
   font-weight: 800;
 }
-main .dashboard .stats .flex-box svg {
+main .layout .stats .flex-box svg, main .dashboard .stats .flex-box svg {
   padding: 5%;
   border-radius: 50%;
 }
-main .dashboard .stats .flex-box:first-child svg {
+main .layout .stats .flex-box:first-child svg, main .dashboard .stats .flex-box:first-child svg {
   background-color: #cad1f6;
 }
-main .dashboard .stats .flex-box:nth-child(2) svg {
+main .layout .stats .flex-box:nth-child(2) svg, main .dashboard .stats .flex-box:nth-child(2) svg {
   background-color: #c0ebfe;
 }
-main .dashboard .stats .flex-box:nth-child(3) svg {
+main .layout .stats .flex-box:nth-child(3) svg, main .dashboard .stats .flex-box:nth-child(3) svg {
   background-color: #fff0c5;
 }
-main .dashboard .stats .flex-box:nth-child(4) svg {
+main .layout .stats .flex-box:nth-child(4) svg, main .dashboard .stats .flex-box:nth-child(4) svg {
   background-color: #f5c7e4;
 }
-main .dashboard .stats .flex-box:nth-child(5) svg {
+main .layout .stats .flex-box:nth-child(5) svg, main .dashboard .stats .flex-box:nth-child(5) svg {
   background-color: #c2f0da;
 }
-main .dashboard .stats .flex-box:nth-child(6) svg {
+main .layout .stats .flex-box:nth-child(6) svg, main .dashboard .stats .flex-box:nth-child(6) svg {
   background-color: #cad1f6;
 }
-main .dashboard .stats .flex-box:nth-child(7) svg {
+main .layout .stats .flex-box:nth-child(7) svg, main .dashboard .stats .flex-box:nth-child(7) svg {
   background-color: #cad1f6;
 }
-main .dashboard .stats .flex-box:nth-child(8) svg {
+main .layout .stats .flex-box:nth-child(8) svg, main .dashboard .stats .flex-box:nth-child(8) svg {
   background-color: #c0ebfe;
 }
-main .dashboard .visualization {
+main .layout .visualization, main .dashboard .visualization {
   background-color: white;
   border-radius: 1rem;
   padding: 3%;
+}
+main .general-configuration {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .general-configuration .left, main .general-configuration .right {
+  width: 47%;
+}
+main .general-configuration .left .button-layout, main .general-configuration .right .button-layout {
+  margin-bottom: 5%;
+  background-color: white;
+  padding: 1% 3%;
+  border-radius: 1rem;
+  width: 100%;
+}
+main .general-configuration .left .button-layout .wrapper, main .general-configuration .right .button-layout .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+main .general-configuration .left .button-layout .wrapper .sub-heading, main .general-configuration .right .button-layout .wrapper .sub-heading {
+  font-weight: 400;
+}
+main .general-configuration .left .button-layout .wrapper input, main .general-configuration .right .button-layout .wrapper input {
+  height: 2rem;
+  width: 80%;
+}
+main .general-configuration .left .button-layout .wrapper span, main .general-configuration .right .button-layout .wrapper span {
+  font-size: 0.9rem;
+}
+main .general-configuration .left .button-layout .wrapper .top, main .general-configuration .right .button-layout .wrapper .top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+main .general-configuration .left .button-layout .wrapper .top span, main .general-configuration .right .button-layout .wrapper .top span {
+  background-color: rgb(219, 219, 219);
+  padding: 3%;
+  border-radius: 1rem;
+}
+main .general-configuration .left .button-layout .wrapper .top .switch, main .general-configuration .right .button-layout .wrapper .top .switch {
+  background-color: #be3e44;
+  border-radius: 5rem;
+  width: 3.5rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  padding-left: 3%;
+  cursor: pointer;
+}
+main .general-configuration .left .button-layout .wrapper .top .switch .button, main .general-configuration .right .button-layout .wrapper .top .switch .button {
+  border-radius: 50%;
+  background-color: #ce464a;
+  color: white;
+  animation: slideLeft 0.2s ease-out forwards;
+}
+main .general-configuration .left .button-layout .wrapper .top .switch .switched, main .general-configuration .right .button-layout .wrapper .top .switch .switched {
+  background-color: #1abc9c;
+  border-radius: 50%;
+  color: white;
+  animation: slideRight 0.2s ease-in forwards;
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+main .general-configuration .left .button-layout .wrapper .top .switchedBackground, main .general-configuration .right .button-layout .wrapper .top .switchedBackground {
+  background-color: #16a085;
+}
+main .general-configuration .left .button-layout .wrapper .bottom, main .general-configuration .right .button-layout .wrapper .bottom {
+  font-size: 0.7rem;
+}
+main .general-configuration .left .button-layout .wrapper hr, main .general-configuration .right .button-layout .wrapper hr {
+  width: 100%;
 }
 @media (max-width: 768px) {
   main .dashboard .stats {
