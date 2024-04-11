@@ -246,10 +246,11 @@ main{
         
     }
     
-    .general-configuration{
+    .main-layout{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
         .left, .right{
             width: 47%;
             
@@ -265,13 +266,7 @@ main{
                     .sub-heading{
                         font-weight: 400;
                     }
-                    input{
-                        height: 2rem;
-                        width: 80%;
-                    }
-                    span{
-                        font-size: 0.9rem;
-                    }
+                    
                     .top{
                         display: flex;
                         flex-direction: row;
@@ -336,6 +331,21 @@ main{
                     hr{width: 100%;}
                 }
             }
+
+            input{
+                height: 2rem;
+                width: 80%;
+            }
+            span{
+                font-size: 0.9rem;
+            }
+
+            textarea{
+                width: 100%;
+                height: 4rem;
+            }
+
+            
 
         }
     }

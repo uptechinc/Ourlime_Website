@@ -6,7 +6,7 @@ import SwitchButton from '../SwitchButton';
 export default function GeneralConfiguration() {
   
   return (
-    <div className="general-configuration">
+    <div className="general-configuration main-layout">
       <div className="left">
         <div className="general-config button-layout">
           <h3>General Configuration</h3>
