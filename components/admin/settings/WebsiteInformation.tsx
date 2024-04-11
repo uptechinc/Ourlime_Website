@@ -17,7 +17,7 @@ export default function WebsiteInformation() {
             <div className="input-data">
               <p className='sub-heading'>Website Name</p>
               <input type="text" value="Ourlime"/>
-              <p className="bottom">Your website name, it will on website's footer and E-mails.</p>
+              <p className="bottom">Your website name, it will on website&apos;s footer and E-mails.</p>
             </div>
             
             <hr />
@@ -25,7 +25,7 @@ export default function WebsiteInformation() {
             <div className="input-data">
               <p className='sub-heading'>Website Keywords</p>
               <input type="text" value="social, wowonder, social site"/>
-              <p className="bottom">Your website's keyword, used mostly for SEO and search engines.</p>
+              <p className="bottom">Your website&apos;s keyword, used mostly for SEO and search engines.</p>
             </div>
             
             <hr />
@@ -33,7 +33,7 @@ export default function WebsiteInformation() {
             <div className="input-data">
               <p className='sub-heading'>Website Description</p>
               <textarea value="Discover and connect with private communities on Ourlime. Explore shared interests, recipes, and tips with like-minded individuals."/>
-              <p className="bottom">Your website's description, used mostly for SEO and search engines, Max of 100 characters is recommended</p>
+              <p className="bottom">Your website&apos;s description, used mostly for SEO and search engines, Max of 100 characters is recommended</p>
             </div>
             
             <hr />
