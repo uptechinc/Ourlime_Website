@@ -101,9 +101,9 @@ header{
 }
 
 nav{
-    width: 20%;
+    width: auto;
     ul{
-
+        padding: 0;
         li {
             display: flex;
             flex-direction: row;
@@ -114,12 +114,21 @@ nav{
             gap: 5%;
             position: relative;
             cursor: pointer;
-            .plus-icon {
-              margin-left: auto;
+            z-index: 1;
+            
+            .right{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                .plus-icon {
+                    justify-self: flex-end;
+                  }
             }
         
     
         }
+
 
 
         .dropdown-content {
@@ -158,7 +167,7 @@ main{
         border-radius: 1rem;
         background-color: #f4f5fd;
         padding-left: 2rem;
-        padding-right: 2rem;
+        padding-right: 4rem;
 
         h1{
             font-weight: 600;
