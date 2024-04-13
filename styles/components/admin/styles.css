@@ -100,7 +100,10 @@ header .right .profile-container p::after {
 }
 
 nav {
-  width: 20%;
+  width: auto;
+}
+nav ul {
+  padding: 0;
 }
 nav ul li {
   display: flex;
@@ -112,9 +115,16 @@ nav ul li {
   gap: 5%;
   position: relative;
   cursor: pointer;
+  z-index: 1;
 }
-nav ul li .plus-icon {
-  margin-left: auto;
+nav ul li .right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+nav ul li .right .plus-icon {
+  justify-self: flex-end;
 }
 nav ul .dropdown-content {
   padding: 0;
@@ -145,7 +155,7 @@ main .layout, main .dashboard {
   border-radius: 1rem;
   background-color: #f4f5fd;
   padding-left: 2rem;
-  padding-right: 2rem;
+  padding-right: 4rem;
 }
 main .layout h1, main .dashboard h1 {
   font-weight: 600;

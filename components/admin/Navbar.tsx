@@ -43,15 +43,18 @@ export default function Navbar() {
         <ul>
             <li className='dashboard-item'><DashboardIcon /><Link href="/admin">Dashboard</Link></li>
             
-            <li onClick={()=> toggleDropDown('settings')}>
-                <SettingsIcon />Settings <AddRoundedIcon className="plus-icon" />
+            <li className="nav-dropdown" onClick={()=> toggleDropDown('settings')}>
+                <SettingsIcon />
+                    <div className="right">
+                    Settings <AddRoundedIcon className="plus-icon" />
+                    </div>
                 
             </li>
             <ul className={`dropdown-content ${isSettingsOpen ? 'show' : 'hide'}`}>
                     <li><Link href="/admin/settings/general">General Configuration</Link></li>
                     <li><Link href="/admin/settings/website-information">Website Information</Link></li>
                     <li><Link href="/admin/settings/file">File Upload Configuration</Link></li>
-                    <li><Link href="/admin/settings/email">E-Mail & SMS Setup</Link></li>
+                    <li><Link href="">E-Mail & SMS Setup (Coming Soon) </Link></li>
                     <li><Link href="/admin/settings/chat">Chat & Video/Audio</Link></li>
                     <li><Link href="/admin/settings/social-login">Social Login Settings</Link></li>
                     <li><Link href="/admin/settings/ai">AI Settings</Link></li>
@@ -63,8 +66,11 @@ export default function Navbar() {
                     </div> */}
             </ul>
             
-            <li onClick={()=> toggleDropDown('features')}>
-                <ViewAgendaRoundedIcon />Manage Features <AddRoundedIcon className="plus-icon" />
+            <li className="nav-dropdown" onClick={()=> toggleDropDown('features')}>
+                <ViewAgendaRoundedIcon />
+                <div className="right">
+                    Manage Features <AddRoundedIcon className="plus-icon" />
+                </div>
                 <div className="dropdown-content">
                     
                 </div>
@@ -80,7 +86,7 @@ export default function Navbar() {
 
             </ul>
             
-            <li onClick={()=> toggleDropDown('users')}>
+            <li className="nav-dropdown" onClick={()=> toggleDropDown('users')}>
                 <PeopleAltRoundedIcon />Users <AddRoundedIcon className="plus-icon" />
                 <div className="dropdown-content">
                     
@@ -94,7 +100,7 @@ export default function Navbar() {
                     <li><Link href="/admin/users/online">Online Users</Link></li>
             </ul>
 
-            <li onClick={()=> toggleDropDown('tools')}>
+            <li className="nav-dropdown" onClick={()=> toggleDropDown('tools')}>
                 <BuildIcon />Tools <AddRoundedIcon className="plus-icon" />
                 <div className="dropdown-content">
                     
@@ -108,7 +114,7 @@ export default function Navbar() {
                     <li><Link href="/admin/tools/">Online Users</Link></li>
             </ul>
 
-            <li className='coming-soon'>
+            <li className='nav-dropdown coming-soon'>
                 <AttachMoneyRoundedIcon />Payments & Ads (Coming Soon) <AddRoundedIcon className="plus-icon" />
                 <div className="dropdown-content">
                     
@@ -130,7 +136,7 @@ export default function Navbar() {
                     </div>
             </ul>
             
-            <li className='coming-soon'>
+            <li className='nav-dropdown coming-soon'>
                 <StarsRoundedIcon />Pro System (Coming Soon) <AddRoundedIcon className="plus-icon" />
                 <div className="dropdown-content">
                     
